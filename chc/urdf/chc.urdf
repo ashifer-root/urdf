@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="chc">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.153435343413958 0.279256347449089 0.427598033601038"
+        rpy="0 0 0" />
+      <mass
+        value="13.3143923314902" />
+      <inertia
+        ixx="0.049257304457115"
+        ixy="4.8095810103707E-05"
+        ixz="-0.000447442166962408"
+        iyy="0.0987482948976207"
+        iyz="-4.22053437379323E-06"
+        izz="0.0758221479731222" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="a">
+    <inertial>
+      <origin
+        xyz="-0.000261077451711111 0.0120920473366849 1.48984772350147E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370533673373492" />
+      <inertia
+        ixx="0.000103955698057427"
+        ixy="-2.55907136887189E-08"
+        ixz="-1.02306945637076E-05"
+        iyy="0.000107226899970895"
+        iyz="-4.73247445602561E-08"
+        izz="3.69855930008425E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/a.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/a.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="aa"
+    type="continuous">
+    <origin
+      xyz="0.62754 -0.15388 0.39902"
+      rpy="1.5703 0.0092273 0.076744" />
+    <parent
+      link="base_link" />
+    <child
+      link="a" />
+    <axis
+      xyz="0.0092269 -0.99996 -0.00045467" />
+  </joint>
+  <link
+    name="b">
+    <inertial>
+      <origin
+        xyz="-0.000261080674433256 0.0120922413442349 1.48985013623815E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370526319211824" />
+      <inertia
+        ixx="0.000103960475795434"
+        ixy="-2.55876547265067E-08"
+        ixz="-1.02336127184345E-05"
+        iyy="0.00010723148740865"
+        iyz="-4.73493771150794E-08"
+        izz="3.69813174012549E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/b.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/b.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bb"
+    type="continuous">
+    <origin
+      xyz="0.62754 -0.70131 0.39902"
+      rpy="1.5703 0.0092265 1.0294" />
+    <parent
+      link="base_link" />
+    <child
+      link="b" />
+    <axis
+      xyz="0.0092269 -0.99996 -0.00045467" />
+  </joint>
+  <link
+    name="c">
+    <inertial>
+      <origin
+        xyz="-0.00026108136225933 0.0120922663154713 1.48985359311737E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370523979307435" />
+      <inertia
+        ixx="0.000103961714280872"
+        ixy="-2.55880349888279E-08"
+        ixz="-1.02341949749603E-05"
+        iyy="0.000107232795800359"
+        iyz="-4.73541777015381E-08"
+        izz="3.69818374121028E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/c.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/c.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cc"
+    type="continuous">
+    <origin
+      xyz="0.15346 -0.97502 0.39902"
+      rpy="1.5703 0.0092265 0.50176" />
+    <parent
+      link="base_link" />
+    <child
+      link="c" />
+    <axis
+      xyz="0.0092269 -0.99996 -0.00045467" />
+  </joint>
+  <link
+    name="d">
+    <inertial>
+      <origin
+        xyz="-0.000261081317286194 0.0120922727261251 1.48985204954655E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370524515753723" />
+      <inertia
+        ixx="0.000103960958148904"
+        ixy="-2.55878181130016E-08"
+        ixz="-1.02338608257885E-05"
+        iyy="0.000107231999714093"
+        iyz="-4.73514404747606E-08"
+        izz="3.69815375885829E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/d.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/d.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="dd"
+    type="continuous">
+    <origin
+      xyz="-0.32062 -0.70131 0.39902"
+      rpy="1.5703 0.0092272 0.84515" />
+    <parent
+      link="base_link" />
+    <child
+      link="d" />
+    <axis
+      xyz="0.0092269 -0.99996 -0.00045467" />
+  </joint>
+  <link
+    name="e">
+    <inertial>
+      <origin
+        xyz="-0.000261080678023565 0.0120923460609948 1.48985432892879E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370531297034443" />
+      <inertia
+        ixx="0.000103962499686914"
+        ixy="-2.55866852296768E-08"
+        ixz="-1.02338729723253E-05"
+        iyy="0.000107233420414485"
+        iyz="-4.73508536415157E-08"
+        izz="3.6980241937689E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/e.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/e.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ee"
+    type="continuous">
+    <origin
+      xyz="-0.32062 -0.15388 0.39902"
+      rpy="1.5703 0.0092267 -1.2251" />
+    <parent
+      link="base_link" />
+    <child
+      link="e" />
+    <axis
+      xyz="0.0092269 -0.99996 -0.00045467" />
+  </joint>
+  <link
+    name="f">
+    <inertial>
+      <origin
+        xyz="-0.000261076470444793 0.0120916983480183 1.48978622521584E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.0370522416463855" />
+      <inertia
+        ixx="0.000103961423340217"
+        ixy="-2.55943525246052E-08"
+        ixz="-1.02318962449463E-05"
+        iyy="0.000107233057390549"
+        iyz="-4.7335277253784E-08"
+        izz="3.69908776650105E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/f.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://chc/meshes/f.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ff"
+    type="continuous">
+    <origin
+      xyz="0.15346 0.11983 0.39902"
+      rpy="1.5703 0.0092277 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="f" />
+    <axis
+      xyz="0.0092269 -0.99996 -0.00045465" />
+  </joint>
+</robot>
